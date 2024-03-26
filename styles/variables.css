@@ -9,7 +9,7 @@
   
   --main-font: "Inter-Variable", sans-serif;
   --main-font-weight: 400;
-  --secondary-font: "PressStart2P";
+  --secondary-font: "PressStart2P", fantasy;
   --header-font-weight: 700;
 
   --background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
