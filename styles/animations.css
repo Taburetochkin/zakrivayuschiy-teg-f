@@ -12,3 +12,96 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+@keyframes arrow{
+  from{
+    transform: translate(0);
+  }
+  to{
+    transform: translate(4px);
+  }
+}
+
+@keyframes heartScaler{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.5);
+  }
+}
+
+@keyframes sparks{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.contour{
+  fill: var(--like-border-color);
+  transition: fill 100ms linear;
+}
+
+.main-body{
+  fill: var(--background-color);
+  transition: fill 300ms linear;
+}
+
+.core{
+  fill: var(--background-color);
+  transition: fill 300ms linear 30ms;
+}
+
+.sparks{
+  fill: var(--like-color);
+  opacity: 0;
+}
+
+.heart{
+  transform-origin: center;
+}
+
+.like-icon:hover .main-body{
+  fill: var(--like-border-color);
+  transition: fill 300ms linear 50ms;
+}
+
+.like-icon:hover .core{
+  fill: var(--like-border-color);
+  transition: fill 300ms linear;
+}
+
+.like-icon:active .main-body{
+  fill: var(--like-color);
+  transition: fill 300ms linear 50ms;
+}
+
+.like-icon:active .core{
+  fill: var(--like-color);
+  transition: fill 300ms linear;
+}
+
+.like-icon.is-liked .contour{
+  fill: var(--like-color);
+  transition: fill 300ms linear 60ms;
+}
+
+.like-icon.is-liked .main-body{
+  fill: var(--like-color);
+  transition: fill 300ms linear 50ms;
+}
+
+.like-icon.is-liked .core{
+  fill: var(--like-color);
+  transition: fill 300ms linear;
+}
+
+.like-icon.is-liked .sparks{
+  animation: sparks 300ms ease-in 300ms;
+}
+
+.like-icon.is-liked .heart{
+  animation: heartScaler 300ms ease-in 100ms alternate;
+}
