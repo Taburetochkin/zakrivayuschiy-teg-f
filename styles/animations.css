@@ -99,7 +99,7 @@
 }
 
 .like-icon.is-liked .sparks{
-  animation: sparks 300ms ease-in 300ms;
+  animation: sparks 300ms ease-in 300ms alternate;
 }
 
 .like-icon.is-liked .heart{
