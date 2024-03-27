@@ -174,10 +174,6 @@
   mix-blend-mode: hard-light;
 }
 
-.image-watermark:focus{
-  outline: none;
-}
-
 .card__image{
   display: block;
   object-position: center;
